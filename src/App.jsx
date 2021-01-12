@@ -9,8 +9,6 @@ export default function App() {
 	const [videos, setVideos] = useState([])
 
 	useEffect(() => {
-		// TODO: Get the data from API_URL above
-		// Store it inside videos state variable
 		fetch(API_URL)
 			.then((data) => data.json())
 			.then((data) => setVideos(data))
