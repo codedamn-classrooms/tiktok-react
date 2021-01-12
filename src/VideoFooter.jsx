@@ -2,7 +2,7 @@ import React from 'react'
 import './VideoFooter.css'
 // import MusicNoteIcon from '@material-ui/icons/MusicNote'
 const MusicNoteIcon = () => 100
-import Ticker from 'react-ticker'
+const Ticker = () => 0 // 'react-ticker'
 
 export default function VideoFooter({ channel, description, song }) {
 	return (
