@@ -1,6 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
-import Footer from './VideoFooter'
-import Sidebar from './VideoSidebar'
+import React, { useEffect, useRef } from 'react'
+import Footer from './FooterLeft'
+import Sidebar from './FooterRight'
 import './Video.css'
 
 export default function Video(props) {

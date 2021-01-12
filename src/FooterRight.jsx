@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import './VideoSidebar.css'
 import FavoriteIcon from './icons/FavoriteIcon'
 import FavoriteBorderIcon from './icons/FavoriteIconBordered'
 import MessageIcon from './icons/Message'
 import ShareIcon from './icons/Share'
+import './FooterRight.css'
 
 function VideoSidebar({ likes, shares, messages }) {
 	const [liked, setLiked] = useState(false)

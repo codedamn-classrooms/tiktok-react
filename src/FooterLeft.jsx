@@ -1,5 +1,5 @@
 import React from 'react'
-import './VideoFooter.css'
+import './FooterLeft.css'
 import MusicNoteIcon from './icons/MusicNote'
 
 export default function VideoFooter({ channel, description, song }) {
