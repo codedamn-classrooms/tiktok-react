@@ -6,7 +6,7 @@ export default function App() {
 	return (
 		<div className="app">
 			<div className="container">
-				<Video url="something" />
+				<Video url="https://github.com/codedamn-classrooms/tiktok-react-material/raw/main/v1.mp4" />
 			</div>
 		</div>
 	)
