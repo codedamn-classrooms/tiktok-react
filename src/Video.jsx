@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './FooterLeft'
 import './Video.css'
 
 export default function Video(props) {
