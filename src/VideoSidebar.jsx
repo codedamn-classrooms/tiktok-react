@@ -1,34 +1,39 @@
 import React, { useState } from 'react'
 import './VideoSidebar.css'
-// import FavoriteIcon from '@material-ui/icons/Favorite'
-// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-// import MessageIcon from '@material-ui/icons/Message'
-// import ShareIcon from '@material-ui/icons/Share'
+import FavoriteIcon from './icons/FavoriteIcon'
+import FavoriteBorderIcon from './icons/FavoriteIconBordered'
+import MessageIcon from './icons/Message'
+import ShareIcon from './icons/Share'
 
-const FavoriteIcon = () => 2
-const FavoriteBorderIcon = () => 2
-const MessageIcon = () => 2
-const ShareIcon = () => 2
 function VideoSidebar({ likes, shares, messages }) {
 	const [liked, setLiked] = useState(false)
 
 	return (
-		<div className="videoSidebar">
-			<div className="videoSidebar__button">
+		<div className="footer-right">
+			<div className="sidebar-icon">
 				{liked ? (
-					<FavoriteIcon fontSize="large" onClick={(e) => setLiked(false)} />
+					<FavoriteIcon
+						style={{ width: '40px', height: '40px' }}
+						onClick={(e) => setLiked(false)}
+					/>
 				) : (
-					<FavoriteBorderIcon fontSize="large" onClick={(e) => setLiked(true)} />
+					<FavoriteBorderIcon
+						style={{ width: '40px', height: '40px' }}
+						onClick={(e) => setLiked(true)}
+					/>
 				)}
 				<p>{liked ? likes + 1 : likes}</p>
 			</div>
-			<div className="videoSidebar__button">
-				<MessageIcon fontSize="large" />
+			<div className="sidebar-icon">
+				<MessageIcon style={{ width: '40px', height: '40px' }} />
 				<p>{messages}</p>
 			</div>
-			<div className="videoSidebar__button">
-				<ShareIcon fontSize="large" />
+			<div className="sidebar-icon record-below">
+				<ShareIcon style={{ width: '40px', height: '40px' }} />
 				<p>{shares}</p>
+			</div>
+			<div className="sidebar-icon record">
+				<img src="https://static.thenounproject.com/png/934821-200.png" />
 			</div>
 		</div>
 	)

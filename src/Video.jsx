@@ -26,19 +26,22 @@ export default function Video(props) {
 	}, [playing])
 
 	const onVideoPress = () => {
-		if (playing === id) {
-			videoRef.current.pause()
-		} else {
+		if (videoRef.current.paused) {
 			videoRef.current.play()
 			setPlaying(id)
+		} else {
+			videoRef.current.pause()
+			setPlaying(null)
 		}
 	}
 
 	return (
 		<div className="video">
 			<video className="player" ref={videoRef} loop onClick={onVideoPress} src={url}></video>
-			<Footer channel={channel} description={description} song={song} />
-			<Sidebar likes={likes} messages={messages} shares={shares} />
+			<div className="bottom-controls">
+				<Footer channel={channel} description={description} song={song} />
+				<Sidebar likes={likes} messages={messages} shares={shares} />
+			</div>
 		</div>
 	)
 }

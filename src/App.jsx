@@ -46,7 +46,7 @@ export default function App() {
 	return (
 		// BEM
 		<div className="app">
-			<div className="app__videos" onScroll={() => setPlaying(null)}>
+			<div className="container" onScroll={() => setPlaying(null)}>
 				{videos.map(({ url, channel, description, song, likes, messages, shares }) => (
 					<Video
 						url={url}

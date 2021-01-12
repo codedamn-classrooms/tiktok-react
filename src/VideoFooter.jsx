@@ -1,25 +1,20 @@
 import React from 'react'
 import './VideoFooter.css'
-// import MusicNoteIcon from '@material-ui/icons/MusicNote'
-const MusicNoteIcon = () => 100
-const Ticker = () => 0 // 'react-ticker'
+import MusicNoteIcon from './icons/MusicNote'
 
 export default function VideoFooter({ channel, description, song }) {
 	return (
-		<div className="videoFooter">
-			<div className="videoFooter__text">
+		<div className="footer-left">
+			<div className="text">
 				<h3>@{channel}</h3>
 				<p>{description}</p>
-				<div className="videoFooter__ticker">
-					<MusicNoteIcon className="videoFooter__icon" />
-					<Ticker mode="smooth">{({ index }) => <p>{song}</p>}</Ticker>
+				<div className="ticker">
+					<MusicNoteIcon style={{ width: '30px' }} />
+					<marquee direction="left" scrollamount="2">
+						{song}
+					</marquee>
 				</div>
 			</div>
-			<img
-				className="videoFooter__record"
-				src="https://static.thenounproject.com/png/934821-200.png"
-				alt=""
-			/>
 		</div>
 	)
 }

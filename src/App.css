@@ -9,23 +9,22 @@ html {
 	place-items: center;
 }
 
-.app__videos {
+.container {
 	position: relative;
-	height: 800px;
+	height: 90vh;
 	border-radius: 20px;
 	overflow: scroll;
-	width: 80%;
-	max-width: 500px;
+	width: 50.625vh;
 	scroll-snap-type: y mandatory;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
-.app__videos::-webkit-scrollbar {
+.container::-webkit-scrollbar {
 	display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
-.app__videos {
+.container {
 	-ms-overflow-style: none; /* IE and Edge */
 	scrollbar-width: none; /* Firefox */
 }
