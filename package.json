@@ -3,11 +3,8 @@
 		"start": "snowpack dev"
 	},
 	"dependencies": {
-		"@material-ui/core": "^4.11.2",
-		"@material-ui/icons": "^4.11.2",
 		"react": "16.13.1",
-		"react-dom": "16.13.1",
-		"react-ticker": "^1.2.2"
+		"react-dom": "16.13.1"
 	},
 	"devDependencies": {
 		"@snowpack/app-scripts-react": "1.10.0",

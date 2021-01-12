@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import './VideoSidebar.css'
-import FavoriteIcon from '@material-ui/icons/Favorite'
-import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
-import MessageIcon from '@material-ui/icons/Message'
-import ShareIcon from '@material-ui/icons/Share'
+// import FavoriteIcon from '@material-ui/icons/Favorite'
+// import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+// import MessageIcon from '@material-ui/icons/Message'
+// import ShareIcon from '@material-ui/icons/Share'
 
+const FavoriteIcon = () => 2
+const FavoriteBorderIcon = () => 2
+const MessageIcon = () => 2
+const ShareIcon = () => 2
 function VideoSidebar({ likes, shares, messages }) {
 	const [liked, setLiked] = useState(false)
 
