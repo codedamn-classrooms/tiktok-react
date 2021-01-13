@@ -1,0 +1,33 @@
+.footer-right {
+	z-index: 100;
+	color: white;
+	margin-right: 15px;
+}
+
+.sidebar-icon {
+	width: 50px;
+	display: flex;
+	margin-bottom: 30px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.record {
+	animation: spinTheRecord infinite 5s linear;
+	filter: invert(1);
+}
+
+.record-below {
+	margin-bottom: 70px;
+}
+
+@keyframes spinTheRecord {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
