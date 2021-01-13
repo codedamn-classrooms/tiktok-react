@@ -10,17 +10,11 @@ function VideoSidebar({ likes, shares, messages }) {
 
 	return (
 		<div className="footer-right">
-			<div className="sidebar-icon">
+			<div className="sidebar-icon" onClick={() => setLiked((state) => !state)}>
 				{liked ? (
-					<FavoriteIcon
-						style={{ width: '40px', height: '40px' }}
-						onClick={(e) => setLiked(false)}
-					/>
+					<FavoriteIcon style={{ width: '40px', height: '40px' }} />
 				) : (
-					<FavoriteBorderIcon
-						style={{ width: '40px', height: '40px' }}
-						onClick={(e) => setLiked(true)}
-					/>
+					<FavoriteBorderIcon style={{ width: '40px', height: '40px' }} />
 				)}
 				<p>{liked ? likes + 1 : likes}</p>
 			</div>
