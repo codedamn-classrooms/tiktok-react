@@ -8,11 +8,7 @@ export default function Video(props) {
 	const videoRef = useRef(null)
 
 	const onVideoPress = () => {
-		if (videoRef.current.paused) {
-			videoRef.current.play()
-		} else {
-			videoRef.current.pause()
-		}
+		// write toggle logic here
 	}
 
 	return (
