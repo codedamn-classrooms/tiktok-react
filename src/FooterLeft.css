@@ -1,0 +1,30 @@
+.footer-left {
+	position: relative;
+	color: white;
+	flex-grow: 1;
+	pointer-events: none;
+	display: flex;
+	margin-left: 15px;
+	margin-bottom: 30px;
+}
+
+.ticker {
+	height: fit-content;
+	width: 60%;
+	display: flex;
+	align-items: center;
+}
+
+.ticker marquee {
+	display: flex;
+	align-items: center;
+}
+
+.text {
+	width: 100%;
+}
+
+.text h3,
+.text p {
+	padding-bottom: 20px;
+}

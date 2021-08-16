@@ -24,6 +24,9 @@ export default function App() {
 							channel={video.channel}
 							description={video.description}
 							song={video.song}
+							likes={video.likes}
+							shares={video.shares}
+							messages={video.messages}
 							url={video.url}
 						/>
 					)
