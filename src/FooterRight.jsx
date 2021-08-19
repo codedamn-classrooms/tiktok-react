@@ -6,20 +6,20 @@ import ShareIcon from './icons/Share'
 import './FooterRight.css'
 
 function VideoSidebar({ likes, shares, messages }) {
-	// do something
 	const [liked, setLiked] = useState(false)
 
 	return (
 		<div className="footer-right">
-			<div
-				className="sidebar-icon"
-				onClick={() => setLiked((state) => !state)}
-			>
+			<div className="sidebar-icon">
 				{liked ? (
-					<FavoriteIcon style={{ width: '40px', height: '40px' }} />
+					<FavoriteIcon
+						style={{ width: '40px', height: '40px' }}
+						onClick={(e) => setLiked(false)}
+					/>
 				) : (
 					<FavoriteBorderIcon
 						style={{ width: '40px', height: '40px' }}
+						onClick={(e) => setLiked(true)}
 					/>
 				)}
 				<p>{liked ? likes + 1 : likes}</p>
