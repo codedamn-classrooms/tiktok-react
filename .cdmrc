@@ -1,0 +1,2 @@
+tabs: ['src/App.jsx']
+terminal-one: "yarn install && yarn start --port $PUBLIC_PORT"
