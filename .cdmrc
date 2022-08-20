@@ -1,3 +1,3 @@
 terminal-one: yarn && yarn dev
-tabs: ['src/index.jsx', 'src/App.jsx']
+tabs: ['src/FooterRight.jsx']
 live-reload-browser: false
